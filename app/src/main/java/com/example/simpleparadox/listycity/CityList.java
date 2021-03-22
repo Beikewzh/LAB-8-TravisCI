@@ -78,6 +78,6 @@ public class CityList {
         return cities.size();
     }
     public static boolean IamGroot() {
-        return true;
+        
     }
 }
