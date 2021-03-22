@@ -17,13 +17,19 @@ class CityListTestLab {
         return new City("Edmonton", "Alberta");
     }
 
-    
-
     @Test
-     void testDelete() {
-         CityList cityList = testList();
+    void testAdd() {
+        CityList cityList = testList();
 
-         // Test if the city has been deleted
-         assertEquals(0, cityList.countCities());
-     }
+        assertEquals(1, cityList.countCities());
+
+        City toBeDeleted = new City("Regina", "Saskatchewan");
+
+        cityList.add(toBeDeleted);
+
+        cityList.delete(toBeDeleted);
+
+        assertEquals(1, cityList.countCities());
+    }
+
 }
