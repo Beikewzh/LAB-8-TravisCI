@@ -77,7 +77,7 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
-    public static boolean IamGroot() {
-        
+     public static boolean IamGroot() {
+        return true;
     }
 }
